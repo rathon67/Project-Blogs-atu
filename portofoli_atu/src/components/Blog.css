@@ -1,0 +1,135 @@
+
+.wf-loading {opacity:0}
+
+*{ box-sizing: border-box; }
+html, body{margin: 0;}
+a > img{ border: 0; }
+embed, img{	max-width: 100%;}
+img{height:auto;}
+/* body{font-family:"Libre Baskerville",sans-serif;line-height:150%;font-size:80%;margin:0;background-color:#fff;} */
+#container {max-width:1000px;margin:1em auto 2em auto;padding:0 1em;position:relative;}
+article:first-of-type {margin-top:1em;}
+
+body.single {margin-top:1em;}
+h1,h2,h3,h4,h5,h6 {font-weight:800;margin: .25em 0 0 0;line-height: 1}
+h1 {margin-top:.4em;line-height:1.2;text-align: center; margin-bottom: 30px;}
+h3 {font-size:100%;}
+
+p {color:#333;-webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
+a {text-decoration:none;color:#13a;}
+a:hover {text-decoration:underline;}
+a.byline {color:#888;font-size:80%;}
+a.tag {color:#f00;font-size:66%;display:block;margin-bottom:.25em;text-transform:uppercase;}
+a.headline {color:#000;margin-bottom:.25em;}
+
+thumbnails
+img.thumbnail, img.wp-post-image {width:100%;height:auto;}
+.thumbnailcontainer {
+float: left; margin: 0 1em .5em 0; width: 31%;padding: 0 0 20% 0;border:4px solid black;background-size:cover;background-position:center center;
+}
+
+.thumbnailcontainer img { 
+min-height: auto;
+position:relative; vertical-align: top;
+}
+
+.header-image1 {
+    width: 100%;
+    /* height: 500px; */
+    margin-top: -2em;
+    margin-bottom: 2em;
+    
+}
+
+/* byline */
+.byline {font-family:raleway;font-weight:600;text-transform:uppercase;color:silver;font-size:80%;}
+.byline .logo {color:black;}
+.byline img {height:12px;bottom:-3px;margin-right:5px;position:relative;}
+img.offworld {height:18px!important;bottom:-6px!important}
+.byline .author {color:#999;}
+.byline a {text-decoration:none;color:#999}
+
+ /* HOMEPAGE layout stuff*/
+	#slots,#features,#posts {max-width:1024px;position:relative;margin:0 auto 0px auto}
+	#slots {margin-top:1.25em;display:block;}
+	#posts {clear:both;}
+	div.feature {max-width:100%;width:100%;margin:0 0 20px 0; position:relative; display:inline-block; text-align:left;vertical-align:top;}
+	div.bigfeature {max-width:100%;width:100%;margin:0 0 .5em 0; position:relative; display:inline-block; text-align:left;}
+	div.morefeatures {max-width:100%;width:100%;margin:0 0 1.5em 0; position:relative; display:inline-block; text-align:left;}
+	div.feature h2, .featureboxfeature  h2 {font-size:120%;}
+	div.bigfeature h2 {font-size:120%;}
+	div.morefeatures h2 {font-size:120%;}
+	div.morefeatures img.thumbnail {width:31%;float:left;margin-right:20px}
+	div.evens img.thumbnail {width:50%;float:right;margin-left:20px;margin-right:0;}
+	   div.top {max-width:100%;width:100%;margin:0 0 .5em 0; position:relative; display:inline-block; text-align:left;}
+	   div.top .thumbnailcontainer {width:100%;float:none;padding-bottom:56%}
+	#featurebox {width:100%;position:relative;}
+	.featureboxfeature {width:100%;clear:left;}
+	.fromtheshop {padding: 1em;border: 4px solid #ddd;}
+	.fromtheshop h3 {margin-top:-1.5em;margin-bottom:.5em;background-color:white;padding:0 .5em 0 .5em;width:265px;color:silver;}
+
+div.morefeatures .thumbnailcontainer {width:31%;float:left;margin-right:20px;}
+div.morefeatures.evens .thumbnailcontainer {width:31%;float:right;margin-left:20px;}
+div.morefeatures.firstmorefeature {border-top:none;}
+
+
+@media screen and (min-width: 768px) {
+
+.thumbnailcontainer { display: block; width: 100%; height: auto; position: relative; overflow: hidden; padding: 56.25% 0 0 0; background-color:black; } 
+.thumbnailcontainer img { display: block; min-width: 100%; min-height: 100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+div.top .thumbnailcontainer { display: block; width: 100%; height: auto; position: relative; overflow: hidden; padding: 56.25% 0 0 0; background-color:black;}
+	.featureboxfeature .thumbnailcontainer {float:none;}
+.featuredimage-portrait {width:50%;}
+
+div.morefeatures .thumbnailcontainer {padding-top:20%;}
+div.morefeatures.evens .thumbnailcontainer {padding-top:20%;}
+	.fromtheshop h3 {margin-top:-2em} 
+  	img.offworld {height:26px!important;bottom:-9px!important}
+#metadata {display:inline;}
+	.navbyline {font-size:120%;}
+  	.navbyline img {height:18px;bottom:-2px;}
+	#slots,#posts {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-justify-content: space-between;justify-content: space-between; -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;}
+
+	div.feature {width:31%;margin:0 0% 20px 0;position:relative;text-align:left;}
+
+	div#content {margin:0 330px 20px 0px;}
+	div.morefeatures {padding-top:1.5em; border-top:4px solid #ddd;}
+	div.secondbigfeature {padding-top:1.5em;}
+
+	#sidebar {display:block;}
+	#story, .nextstory {margin-right:340px;}
+	.nextstory {overflow:hidden;}
+	.nextstory img {width:100%;float:none;margin:.75em 0 .75em 0;}
+	.mobilead {display:none;}
+	.essay {max-width:728px;}
+	#M260692ScriptRootC131641 {margin-bottom:2em;margin-right:340px;}
+	
+	}
+
+@media screen and (min-width: 940px) {
+	.nextstory img {width:40%;float:right;margin:.75em 0 .75em 2em;}
+	.author.archive .nextstory img {width: 100%;}
+	.essay {max-width:600px}
+    .essay h1 {margin:.25em -150px 0 -150px;line-height:125%;}
+	.essay .navbyline {margin-left:-150px;}
+    #authorbox {float:left;width:120px;height:170px;margin:0 0 0 -150px;font-size:75%;text-align:right;}
+    #authorbox  {display:block;}
+    #unit1 {float:right;width:300px;margin:0 -150px 2em 2em}
+    #unit2 {float:left;width:300px;margin:0 2em 2em  -150px}
+    #sharebox {display:block;}
+    
+    #featurebox {display: flex; display: -webkit-flex;justify-content:space-between;-webkit-justify-content:space-between; }
+	#left {-webkit-flex-grow: 2;flex-grow: 2;}
+	#right {width:170px;min-width:170px;margin-left:30px;font-size:80%}
+	#right .tag {position:relative;margin-bottom:.5em;}
+	#right .byline {display:none;}
+	#right .headline {font-size:90%;position:relative;top:-4px;}
+	.featureboxfeature {width:auto;}
+	#featureboxfeature1 .thumbnailcontainer {padding-top:70%}
+	
+	}
+
+ @media screen and (min-width: 1020px) {
+    .essay {max-width:700px;}
+    }

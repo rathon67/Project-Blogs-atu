@@ -11,8 +11,8 @@ class Home extends Component {
       <Grid>
           {/* Jumbotron section */}
           <Jumbotron>
-              <h1 style={{fontFamily:"sail,cursive"}}>A lucky little girl, flying high, and radiate positive energy.</h1>
-              <p>And suddenly you know... It`s time to start something new and trust the maigc of beginnings</p>
+              <h1 style={{fontFamily:"sail,cursive",color:"#404F52 "}}>A lucky little girl, flying high, and radiate positive energy.</h1>
+              <p style={{color:"#9AC2CC "}}>And suddenly you know... It`s time to start something new and trust the maigc of beginnings</p>
             <Link to="/about">
                 <Button bsStyle="primary">About</Button>
             </Link>
@@ -24,7 +24,7 @@ class Home extends Component {
             <hr style={{height:"10px", backgroundColor:"#CAD7D8"}}/>
             <Link className="tittle-latestpost" to="/" style ={{textDecoration:"none"}}> <h2 style ={{backgroundColor:"#f1f1f1", color:"black"}}>FLORALS, TOO, CAN BE COOL AND EDGY</h2></Link>
             <span className="date">September 5, 2018</span>
-            <img width={1100}  alt="900x500" src="assets/img/maxresdefault.jpg"/><br/><br/><br/>
+            <Image width={1100}  alt="900x500" src="assets/img/maxresdefault.jpg" rounded/><br/><br/><br/>
             
             <a className="ghost" href="" style={{textDecoration:"none",padding:"10px"}}>CONTINUE READING</a><br/><br/>
             <hr style={{height:"8px", backgroundColor:"#CAD7D8"}}/>
@@ -54,7 +54,7 @@ class Home extends Component {
                   <div className="col-page col-sm-8 col-md-6">
                     <a href className="black fondo-publicacion-home">
                       <div className="img-publicacion-principal-home">
-                        <img className src="https://placeholdit.imgix.net/~text?txtsize=34&txt=&w=500&h=300" />
+                        <Image rounded className src="https://placeholdit.imgix.net/~text?txtsize=34&txt=&w=500&h=300" />
                       </div>
                       <div className="contenido-publicacion-principal-home">
                         <h3>Neque porro quisquam est qui dolorem ipsum</h3>
@@ -68,7 +68,7 @@ class Home extends Component {
                   <div className="col-page col-sm-8 col-md-6">
                     <a href className="black fondo-publicacion-home">
                       <div className="img-publicacion-principal-home">
-                        <img className src="https://placeholdit.imgix.net/~text?txtsize=34&txt=&w=500&h=300" />
+                        <Image rounded className src="https://placeholdit.imgix.net/~text?txtsize=34&txt=&w=500&h=300" />
                       </div>
                       <div className="contenido-publicacion-principal-home">
                         <h3>Neque porro quisquam est qui dolorem ipsum</h3>
@@ -87,7 +87,7 @@ class Home extends Component {
                   <div className="hidden-sm col-page col-sm-4 col-md-3">
                     <a href className="fondo-publicacion-home">
                       <div className="img-publicacion-home">
-                        <img className="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=34&txt=&w=500&h=300" />
+                        <Image rounded className="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=34&txt=&w=500&h=300" />
                       </div>
                       <div className="contenido-publicacion-home">
                         <h3>Neque porro quisquam est qui dolorem ipsum</h3>
@@ -160,21 +160,21 @@ class Home extends Component {
             <Row className="show-grid text-center">
             <Carousel >
               <Carousel.Item>
-                <img width={400} height={200} alt="900x500" src="assets/img/Pinterest-pict9.jpg" />
+                <Image rounded className="img-responsive" width={400} height={200} alt="900x500" src="assets/img/Pinterest-pict9.jpg" />
                 <Carousel.Caption>
                     <h3 style={{color:"#404F52"}}>First slide label</h3>
                   <p style={{color:"#404F52"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img width={400} height={200} alt="900x500" src="assets/img/Pinterest-pict6.jpg" />
+                <Image rounded className="img-responsive" width={400} height={200} alt="900x500" src="assets/img/Pinterest-pict6.jpg" />
                 <Carousel.Caption>
                   <h3 style={{color:"#404F52"}}>Second slide label</h3>
                   <p style={{color:"#404F52"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img width={400} height={200} alt="900x500" src="assets/img/Pinterest-pict2.jpg"/>
+                <Image rounded className="img-responsive" width={400} height={200} alt="900x500" src="assets/img/Pinterest-pict2.jpg"/>
                 <Carousel.Caption>
                   <h3 style={{color:"#404F52"}}>Third slide label</h3>
                   <p style={{color:"#404F52"}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -188,17 +188,20 @@ class Home extends Component {
             <div>
             <Col xs={12} sm={5} >            
             <div id="design-widget" className="widget maidesign_about_widget">
-            <h4 className="widget-heading"><span>About Me</span></h4>			
+            <h4 className="widget-heading img-responsive"><span>About Me</span></h4>			
               <div className="about-widget">
-                <div className="about_photo"><img src="http://mailovedesign.com/chloeandmarc/wp-content/uploads/2015/11/avatar.png" alt="About Me" /></div>
+                <div className="about_photo">
+                <Image src="http://mailovedesign.com/chloeandmarc/wp-content/uploads/2015/11/avatar.png" alt="About Me" />
+                </div>
                 <h2 className="name">Mailoveparis</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                 <div className="widget-social">
                   <a href="#" target="_top"><i className="fab fa-facebook" /></a>&emsp;
-                  <a href="#" target="_top"><i className="fab fa-twitter" /></a>&emsp;    				
-                  <a href="#" target="_top"><i className="fab fa-instagram" /></a>&emsp;    				
-                  <a href="#" target="_top"><i className="fab fa-pinterest" /></a>&emsp;    				
-                  <a href="#" target="_top"><i className="fa fa-heart" /></a>    				    				    				    				    			</div>
+                  <a href="#" target="_top"><i className="fab fa-twitter" /></a>&emsp;
+                  <a href="#" target="_top"><i className="fab fa-instagram" /></a>&emsp;
+                  <a href="#" target="_top"><i className="fab fa-pinterest" /></a>&emsp;
+                  <a href="#" target="_top"><i className="fa fa-heart" /></a>
+                  </div>
               </div>              
             </div>
             </Col>
@@ -207,10 +210,11 @@ class Home extends Component {
             </Col>
             
             <Col xs={12} sm={5} >
-            <h3 style={{padding:"20px",color:"#9AC2CC "}}>My saving stand! catch me out there!</h3>
-            <br/><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2863158172854!2d106.8491629144937!3d-6.2259297954931405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f38e299bfe03%3A0xf95f3e6b8af673e6!2sMadina+Islamic+Primary+School!5e0!3m2!1sen!2sid!4v1536479335411"  frameBorder={5} style={{border: 0}} allowFullScreen />
+            
+            <h4 style={{padding:"7px",}}>My saving stand! catch me out there!</h4>
+            <hr style={{height:"3px", backgroundColor:"#CAD7D8"}}/>
+            <iframe className="img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2863158172854!2d106.8491629144937!3d-6.2259297954931405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f38e299bfe03%3A0xf95f3e6b8af673e6!2sMadina+Islamic+Primary+School!5e0!3m2!1sen!2sid!4v1536479335411"  frameBorder={5} style={{border: 0}} allowFullScreen />
             </Col>
-
             
             </div>
             
@@ -256,19 +260,17 @@ class Home extends Component {
             <hr style={{height:"5px", backgroundColor:"#CAD7D8"}}/>
                 <div className="text-center">                  
                     <a href="" rel="bookmark" target="_top">
-                    <img width={150} height={150} src="http://mailovedesign.com/chloeandmarc/wp-content/uploads/2015/06/14370726237_f3331a0d3e_o-150x150.jpg" className="side-item-thumb wp-post-image" alt />
-                    </a>
-                  
+                    <Image rounded width={150} height={150} src="http://mailovedesign.com/chloeandmarc/wp-content/uploads/2015/06/14370726237_f3331a0d3e_o-150x150.jpg" className="side-item-thumb  " alt />
+                    </a>                  
                   <div className="side-text">
                     <h5><a href="" rel="bookmark" target="_top" style={{textDecoration:"none", color:"#404F52"}}>Self-Creation Of Your Own Cocktail</a></h5>
                     <span className="side-meta"><a href="" rel="category tag" target="_top" style={{textDecoration:"none", color:"#404F52", fontFamily:"sail,cursive"}}>Lifestyle</a></span>							
                   </div>
                 </div>
-              
-              
                 <div className="side-item">
                   <div className="side-image">
-                    <a href="http://mailovedesign.com/chloeandmarc/the-fragile-girl/" rel="bookmark" target="_top"><img width={150} height={150} src="http://mailovedesign.com/chloeandmarc/wp-content/uploads/2015/06/photo-1451650645557-62193a7bed6a-150x150.jpg" className="side-item-thumb wp-post-image" alt /></a>
+                    <a href="http://mailovedesign.com/chloeandmarc/the-fragile-girl/" rel="bookmark" target="_top">
+                    <Image rounded className="side-item-thumb " width={150} height={150} src="http://mailovedesign.com/chloeandmarc/wp-content/uploads/2015/06/photo-1451650645557-62193a7bed6a-150x150.jpg"  alt /></a>
                   </div>
                   <div className="side-text">
                     <h5><a href="http://mailovedesign.com/chloeandmarc/the-fragile-girl/" rel="bookmark" target="_top" style={{textDecoration:"none", color:"#404F52"}}>The Fragile Girl</a></h5>
@@ -276,19 +278,17 @@ class Home extends Component {
                   </div>
                 </div>
                 <hr style={{height:"5px", backgroundColor:"#CAD7D8"}}/>
-              
-            
           </div>
           
             
-            <form style={{height:"200px"}} method="post" data-id={581} data-name="Subscribe via Email">
-            <div className="mc4wp-form-fields"> 
-            <label><h3>Sign up for my Newsletter</h3></label>
-              <input style={{border:"none",borderColor:"transparent"}} type="email" name="EMAIL" placeholder="Your email address" required /><br/>
+            <form style={{height:"200px",padding:"20px"}} method="post" data-id={581} data-name="Subscribe via Email">
+            
+            <label><h4>Sign up for my Newsletter</h4></label>
+              <input  type="email" name="EMAIL" placeholder="Your email address" required /><br/>
               <ul class="pager">
               <li><a href="#">Subscribe</a></li>              
               </ul>
-              </div>
+              
             </form>
             
           </aside>

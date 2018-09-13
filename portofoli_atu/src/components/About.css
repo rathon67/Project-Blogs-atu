@@ -1,8 +1,17 @@
 .header-image {
     width: 100%;
-    height: 700px;
+    height: 600px;
     margin-top: -2em;
     margin-bottom: 2em;
+    
+}
+
+.about1-image{
+    height: 500px
+}
+.about2-image{
+    height: 600px;
+    text-align: right;
 }
 
 .about-profile-pic {
@@ -10,4 +19,88 @@
     margin: 0 1em 1em 0;
     width: 200px;
     height: 250px;
+}
+
+.about{
+	/* posisi di tengah */
+    /* display:inline-block; */
+    /* position: sticky top; */
+    width: 100%;
+    list-style: none;
+	/* top: 50%;
+    left:50%; */
+        
+	/* -webkit-transform: translateX(90%) translateY(-50%);  */
+	/* -ms-transform: translateX(90%) translateY(20%); */
+	/* transform: translateX(50%) translateY(50%); */
+	/* text styles */
+	font-family: 'Euphoria Script', cursive;
+	/* font-size: 100px; */
+	letter-spacing: 50px;
+    color:#E3F8F9;
+    font-style: italic;
+	/* untuk modifikasi text
+    text-decoration:none;
+    text-transform:uppercase;*/
+    text-align: center;
+	/* menambahkan border */
+	border:0.10em solid #E3F8F9;
+    padding: 30px;
+    opacity: 0.6;
+}
+.about:hover{
+	border-color:black;
+    color:black;
+    background-color:#E3F8F9;
+    
+	
+}
+h1{
+    letter-spacing: 3px;
+}
+h3{
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    /* color: white; */
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
