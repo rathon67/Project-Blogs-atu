@@ -327,6 +327,7 @@ class Home extends Component {
                 </ul>
               </div>
             </div>
+            
             </Col>
             <Col xs={12} sm={1} className="text-center">
           </Col>
